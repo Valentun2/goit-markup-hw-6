@@ -687,8 +687,9 @@ body {
 }
 
 .modal-form-svg {
-  width: 18px;
   height: 24px;
+  width: 18px;
+
   position: absolute;
   top: 11px;
   left: 16px;
