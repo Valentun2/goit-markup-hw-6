@@ -438,6 +438,7 @@ body {
   color: var(--secondary-color);
 }
 .footer-input {
+  width: 264px;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -446,6 +447,7 @@ body {
   border-radius: 4px;
   height: 40px;
   padding-left: 16px;
+  color: var(--secondary-color);
 }
 .footer-subscribe-wrappper {
   display: flex;
@@ -471,10 +473,11 @@ body {
   color: var(--secondary-color);
   border: none;
   transition: background-color var(--transition-duration-funs);
+  cursor: pointer;
 }
 .btn-footer-subscribe:focus,
 .btn-footer-subscribe:hover {
-  background-color: var(--footer-icon-focus);
+  background-color: var(--social-icon-color-hover);
 }
 
 .telegram-icon {
@@ -666,6 +669,9 @@ body {
 .modal-form-field:not(:nth-child(n + 5)) {
   margin-bottom: 8px;
 }
+.modal-field {
+  margin-bottom: 16px;
+}
 .modal-form-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -678,7 +684,6 @@ body {
   margin-bottom: 16px;
 }
 .modal-form-deck {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -689,9 +694,9 @@ body {
 .modal-form-svg {
   height: 24px;
   width: 18px;
-
+  align-self: center;
   position: absolute;
-  top: 11px;
+
   left: 16px;
 }
 .modal-form-input:focus + .modal-form-svg {
@@ -699,6 +704,7 @@ body {
 }
 .form-input-wrapper {
   position: relative;
+  display: flex;
 }
 .modal-form-input {
   width: 100%;
@@ -714,7 +720,8 @@ body {
 .modal-form-message {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-top: 8px;
 }
 .modal-form-message:focus {
   outline: none;
@@ -776,4 +783,7 @@ body {
 .modal-form-button:hover,
 .modal-form-button:focus {
   background-color: var(--button-color);
+}
+.modal-form-link {
+  color: var(--color-logo);
 }
